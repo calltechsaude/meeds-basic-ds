@@ -27,6 +27,15 @@ export {
 } from './components/Input'
 export { SearchInput, type SearchInputProps } from './components/SearchInput'
 export { Checkbox, type CheckboxProps } from './components/Checkbox'
+export { Select, type SelectProps, type SelectVariant } from './components/Select'
+export { MultiSelect, type MultiSelectProps, type MultiSelectOption } from './components/MultiSelect'
+export {
+  useCombobox,
+  ComboboxPanel,
+  COMBOBOX_TRIGGER_CLASS,
+  type ComboOption,
+  type ComboboxPanelProps,
+} from './components/comboboxCore'
 export { Toggle, type ToggleProps } from './components/Toggle'
 
 // exibição

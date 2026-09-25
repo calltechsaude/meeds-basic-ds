@@ -30,6 +30,15 @@
   --ds-danger-soft: 253 236 236;
 }
 
+/* lista de opções dos comboboxes rola sem scrollbar visível */
+.ds-no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.ds-no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
 .dark {
   --ds-primary-hover: 9 38 41;
 

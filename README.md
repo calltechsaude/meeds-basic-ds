@@ -70,7 +70,7 @@ Convenção de raio: `rounded-lg` controles · `rounded-xl` pills/tiles · `roun
 | Categoria | Componentes |
 |---|---|
 | Ações | `Button` (primary/gradient/secondary/danger/danger-outline/ghost; sm/md/lg; `loading`, `leftIcon`, `fullWidth`), `IconButton` |
-| Formulário | `Form`, `Field`, `FieldError`, `Input`, `PasswordInput`, `LockedInput`, `Textarea`, `SearchInput`, `Checkbox`, `Toggle` |
+| Formulário | `Form`, `Field`, `FieldError`, `Input`, `PasswordInput`, `LockedInput`, `Textarea`, `SearchInput`, `Checkbox`, `Toggle`, `Select` (combobox com busca, API de `<select>`, `optionColors`, variantes default/filter), `MultiSelect` (chips removíveis; núcleo comum `useCombobox`/`ComboboxPanel`) |
 | Exibição | `Badge` (tones + `hash`), `CountBadge`, `StatusDot`, `Avatar`, `IconTile`, `Card`, `SectionCard`, `KpiCard`, `SectionLabel`, `PageHeader`, `PageContainer`, `InfoRow`, `ListHeader`/`ListItem`, `Tabs` (underline/pill), `ProgressBar` |
 | Feedback | `Alert`, `EmptyState`, `ErrorState`, `Spinner`, `CenteredSpinner`, `Skeleton`, `ToastProvider` + `useToast` |
 | Overlays | `Modal` (sm/md/lg/xl, Esc + backdrop, `z-modal`), `ConfirmDialog` (substitui `window.confirm`) |
@@ -124,5 +124,5 @@ antigo do web e a escala estática `brand-*`.
 ### Atenção na migração
 
 - **Não** levar para os apps os resets globais antigos (`* { position: relative }`, `!important` de Bootstrap); o DS não os define de propósito.
-- `Select`/`MultiSelect` (combobox com busca do admin/doctor) ainda **não** foram extraídos — próxima versão; manter os locais por enquanto.
+- `Select`/`MultiSelect` do DS substituem os do admin/doctor (mesma API); a única diferença é o z-index do painel, agora `z-dropdown` do preset.
 - Tema escuro fixo da tela de consulta do doctor (slates `#0f172a`) não responde ao `.dark`; migrar depois para os tokens.
