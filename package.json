@@ -3,6 +3,16 @@
   "version": "0.1.0",
   "description": "Meeds Design System — tokens, preset Tailwind e componentes React reutilizáveis para os fronts meeds-basic-*",
   "type": "module",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "design-system",
+    "react",
+    "tailwind",
+    "components"
+  ],
   "sideEffects": ["*.css"],
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
@@ -25,6 +35,8 @@
   ],
   "scripts": {
     "build": "tsup",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm run typecheck && npm run build",
     "dev": "tsup --watch",
     "typecheck": "tsc --noEmit"
   },
