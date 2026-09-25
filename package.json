@@ -4,8 +4,10 @@
   "description": "Meeds Design System — tokens, preset Tailwind e componentes React reutilizáveis para os fronts meeds-basic-*",
   "type": "module",
   "license": "MIT",
-  "publishConfig": {
-    "access": "public"
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/calltechsaude/meeds-basic-ds.git"
   },
   "keywords": [
     "design-system",

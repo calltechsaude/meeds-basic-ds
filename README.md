@@ -8,12 +8,14 @@ Stack alvo: React 18/19, Tailwind 3.4, lucide-react, TypeScript.
 ## Instalação
 
 ```bash
-npm run build   # neste repo, gera dist/
+# no app consumidor (fixar sempre por tag):
+npm install git+https://github.com/calltechsaude/meeds-basic-ds.git#v0.1.0
 
-# no app consumidor:
-npm install ../meeds-basic-ds        # local, ou
-npm install git+ssh://git@github.com/<org>/meeds-basic-ds.git
+# desenvolvimento local do DS:
+npm install ../meeds-basic-ds
 ```
+
+O repo é privado; o install usa o acesso git que você já tem (o script `prepare` builda o `dist/` automaticamente). Nova versão do DS = bump em `version`, commit, tag `vX.Y.Z`, push, e atualizar a tag nos consumidores.
 
 ## Setup no app (3 passos)
 
