@@ -1,0 +1,50 @@
+/* @meeds/ds — tokens CSS.
+   Importar UMA vez no entry do app: import '@meeds/ds/styles.css'
+   Triplets RGB para permitir alpha no Tailwind: rgb(var(--x) / <alpha-value>).
+   Multi-tenant: sobrescrever --ds-primary* em runtime (applyBrand). */
+
+:root {
+  /* marca */
+  --ds-primary: 0 199 210;        /* #00c7d2 */
+  --ds-primary-light: 25 211 221; /* #19d3dd */
+  --ds-primary-dark: 0 141 149;   /* #008d95 */
+  --ds-primary-hover: 240 251 251;/* tinta de hover/fundo da marca */
+
+  /* superfícies e texto */
+  --ds-app-bg: 244 244 244;
+  --ds-app-surface: 255 255 255;
+  --ds-app-border: 231 231 231;
+  --ds-app-text: 52 56 57;
+  --ds-app-muted: 166 166 166;
+  --ds-app-dark: 102 102 102;
+  --ds-app-darker: 51 51 51;
+
+  /* semânticas */
+  --ds-success: 0 200 81;        /* #00C851 */
+  --ds-success-soft: 240 253 245;
+  --ds-warning: 255 187 51;      /* #FFBB33 */
+  --ds-warning-soft: 255 248 231;
+  --ds-warning-strong: 180 83 9; /* texto sobre warning-soft */
+  --ds-danger: 201 0 0;          /* #C90000 */
+  --ds-danger-dark: 160 0 0;
+  --ds-danger-soft: 253 236 236;
+}
+
+.dark {
+  --ds-primary-hover: 9 38 41;
+
+  --ds-app-bg: 18 22 26;
+  --ds-app-surface: 31 37 43;
+  --ds-app-border: 46 54 61;
+  --ds-app-text: 226 230 234;
+  --ds-app-muted: 138 147 156;
+  --ds-app-dark: 178 186 193;
+  --ds-app-darker: 240 243 245;
+
+  --ds-success-soft: 6 43 24;
+  --ds-warning-soft: 51 39 10;
+  --ds-warning-strong: 253 230 138;
+  --ds-danger: 239 68 68;
+  --ds-danger-dark: 220 38 38;
+  --ds-danger-soft: 55 18 18;
+}
